@@ -1,0 +1,10 @@
+---
+
+    - name: 'Install Telegraf'
+      hosts: 'wintest'
+    
+      tasks:
+        - name: 'Install Telegraf With Chocolatey'
+          win_chocolatey:
+            name: telegraf
+            state: present

@@ -1,0 +1,13 @@
+---
+  wintest:
+    hosts:
+      wintest.local:
+        ansible_user: vagrant
+        ansible_password: vagrant
+        ansible_port: 5985
+        ansible_connection: winrm
+        ansible_winrm_transport: ntlm
+        ansible_winrm_message_encryption: always
+  awx:
+    hosts:
+      awx.local:
